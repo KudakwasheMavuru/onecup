@@ -1,0 +1,45 @@
+.search-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.9);
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* Search Box Input */
+#searchOverlay input[type="text"] {
+  width: 80%;
+  max-width: 600px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-box button {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.close-btn {
+  display: block;
+  margin-top: 20px;
+  color: white;
+}
