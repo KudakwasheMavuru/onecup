@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>One Cup Roasters</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.html">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.html">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="vendors/hamburgers/hamburgers.min.css" rel="stylesheet">
+    <link href="vendors/loaders.css/loaders.min.css" rel="stylesheet">
+    <link href="assets/css/theme.min.css" rel="stylesheet" />
+    <link href="assets/css/user.min.css" rel="stylesheet" />
+    <link href="assets/css/search.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="fixed-top">
+      <div class="container px-0">
+        <nav class="navbar navbar-expand-lg navbar-freya navbar-light"> <a class="navbar-brand" href="index.html">
+            <div><img src="assets/img/logo/logo.svg" alt=""  style="width:70px;height:30px;" ></div>
+          </a><button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavbarCollapse" aria-controls="primaryNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="hamburger hamburger--emphatic"><span class="hamburger-box"><span class="hamburger-inner"></span></span></span></button>
+          <div class="collapse navbar-collapse" id="primaryNavbarCollapse">
+            <ul class="navbar-nav py-3 py-lg-0 mt-1 mb-2 my-lg-0 ms-lg-n1">
+              <li class="nav-item dropdown"><a class="nav-link" href="JavaScript:void(0)" aria-expanded="false">Home</a></li>
+              <li class="nav-item dropdown"><a class="nav-link" href="pages/about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle dropdown-indicator" href="JavaScript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pages/cafe.html">Café & Lounge</a></li>
+                  <li><a class="dropdown-item" href="pages/restaurant.html">Restaurant & Bar</a></li>
+                  <li><a class="dropdown-item" href="pages/experience.html">Coffee Experiences</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link" href="pages/coffee.html">Our Coffee</a>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link" href="pages/b2b.html">B2B</a>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link" href="pages/contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown freya-logo" style="color:#ffffff;"><a class="nav-link" style="color:#ffffff;" href="pages/shop.html">Shop</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-lg-auto flex-row justify-content-center py-3 py-lg-0 me-n2">
+              <li><a class="nav-link px-2" href="#" id="openSearch"><span class="fas fa-search" data-fa-transform="shrink-2"></span></a></li>
+              <li><a class="nav-link px-2" href="pages/login.html"><span class="fas fa-shopping-cart" data-fa-transform="shrink-2"></span></a></li>
+              <li><a class="nav-link px-2" href="pages/login.html"><span class="fas fa-user" data-fa-transform="shrink-2"></span></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <div class="preloader" id="preloader">
+        <div class="loader-box">
+          <div class="loader"></div>
+        </div>
+      </div>
+
+
+      <a href="pages/shop.html" class="floating-cart" title="Go to Shop">
+		  <i class="fas fa-shopping-cart"></i>
+	  </a>
+
+	  <style>.floating-cart {
+		  position: fixed;
+		  bottom: 20px;
+		  right: 20px;
+		  z-index: 999;
+		  background-color: #000;
+		  color: #fff;
+		  padding: 12px 15px;
+		  border-radius: 50px;
+		  font-size: 20px;
+		  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+		  transition: background-color 0.3s ease;
+		}
+
+		.floating-cart:hover {
+		  background-color: #333;
+		  color: #fff;
+		  text-decoration: none;
+		}
+	</style>
+
+
+      <section class="py-0">
+        <div class="swiper theme-slider min-vh-100" data-swiper='{"loop":true,"allowTouchMove":false,"autoplay":{"delay":5000},"effect":"fade","speed":800}'>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-zanim-timeline="{}">
+              <div class="bg-holder overlay overlay-freya" style="background-image:url(assets/img/header_3.jpg);" data-parallax="data-parallax" data-rellax-speed="-3"></div>
+              <!--/.bg-holder-->
+              <div class="container">
+                <div class="row min-vh-100 justify-content-start align-items-end pt-11 pb-6 text-white" data-zanim-timeline="{}">
+                  <div class="col">
+                    <div class="row align-items-end">
+                      <div class="col-lg">
+                        <div class="overflow-hidden">
+                          <p class="mb-1 text-uppercase ls" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.1}'>From Farm to First Sip</p>
+                        </div>
+                        <div class="overflow-hidden">
+                          <h2 class="text-white fw-normal mb-4 mb-lg-0" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0}'>Discover Rwanda in Every Cup</h2>
+                        </div>
+                      </div>
+                      <div class="col text-lg-end">
+                        <div class="overflow-hidden">
+                          <div data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.2}'><a class="btn btn-sm btn-outline-white" href="#!">Visit the Café</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-zanim-timeline="{}">
+              <div class="bg-holder overlay overlay-freya" style="background-image:url(assets/img/header_2.jpg);" data-parallax="data-parallax" data-rellax-speed="-3"></div>
+              <!--/.bg-holder-->
+              <div class="container">
+                <div class="row min-vh-100 justify-content-start align-items-end pt-11 pb-6 text-white" data-zanim-timeline="{}">
+                  <div class="col">
+                    <div class="row align-items-end">
+                      <div class="col-lg">
+                        <div class="overflow-hidden">
+                          <p class="mb-1 text-uppercase ls" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.1}'>Kigali’s Favorite Hideaway </p>
+                        </div>
+                        <div class="overflow-hidden">
+                          <h2 class="text-white fw-normal mb-4 mb-lg-0" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0}'>Coffee, Food, and Connection</h2>
+                        </div>
+                      </div>
+                      <div class="col text-lg-end">
+                        <div class="overflow-hidden">
+                          <div data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.2}'><a class="btn btn-sm btn-outline-white" href="#!">Book Your Experience</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-zanim-timeline="{}">
+              <div class="bg-holder overlay overlay-freya" style="background-image:url(assets/img/header_7.jpg);" data-parallax="data-parallax" data-rellax-speed="-3"></div>
+              <!--/.bg-holder-->
+              <div class="container">
+                <div class="row min-vh-100 justify-content-start align-items-end pt-11 pb-6 text-white" data-zanim-timeline="{}">
+                  <div class="col">
+                    <div class="row align-items-end">
+                      <div class="col-lg">
+                        <div class="overflow-hidden">
+                          <p class="mb-1 text-uppercase ls" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.1}'>From cherry to roast</p>
+                        </div>
+                        <div class="overflow-hidden">
+                          <h2 class="text-white fw-normal mb-4 mb-lg-0" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0}'>Learn The Craft</h2>
+                        </div>
+                      </div>
+                      <div class="col text-lg-end">
+                        <div class="overflow-hidden">
+                          <div data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.2}'><a class="btn btn-sm btn-outline-white" href="#!">View Tour Details</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-nav">
+            <div class="swiper-button-prev"><span class="fas fa-chevron-left"></span></div>
+            <div class="swiper-button-next"><span class="fas fa-chevron-right"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="bg-white text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <h3 class="mb-4">One Cup Roasters is more than a café. We’re a roastery, a lifestyle space, and a movement. From the volcanic hills of Rwanda to your table, we deliver specialty Bourbon Arabica coffee crafted to connect people.</h3>
+              <p>Whether you’re shopping beans, enjoying a slow brunch, or hosting an event — One Cup offers bold flavors, rich stories, and meaningful experiences.</p>
+              <a class="btn-outline-dark btn" href="#!">Learn More</a>
+            </div>
+          </div>
+
+          <!-- ======= Services =======-->
+		<section class="section services__v3 text-left" id="services"style="
+		    background-image: url('assets/img/header-7.svg');
+		    background-size: cover;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    padding: 100px 0;
+		    position: relative;
+		  ">
+		  <div class="row g-4">
+
+		    <!-- Café & Lounge -->
+		    <div class="col-md-1 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+		      <div class="p-4 rounded-4 shadow-sm h-100 d-flex flex-column justify-content-between gap-5" style="border: 1px  rgba(211, 211, 211, 0.1); border-radius: 0.5rem;">
+
+		        <div>
+
+		        <img class="mb-3" src="assets/img/icons/cafe.svg" alt=""  style="width:90px;height:90px;" >
+		          <h6 style="font-size:150%; text-align: left">Café & Lounge</h6>
+
+		          <br>
+		          <p style="text-align: left">
+		            Cozy up with a handcrafted cappuccino, plug in and get productive, or gather with friends. Our café is designed to feel like your second home—with better coffee.
+		          </p>
+		        </div>
+		        <a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="#">
+		          <span><a href="pages/cafe.html" class="btn btn-primary">Learn More</a></span>
+		        </a>
+		      </div>
+		    </div>
+
+		    <!-- Restaurant & Bar -->
+		    <div class="col-md-3 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+		      <div class="p-4 rounded-4 shadow-sm h-100 d-flex flex-column justify-content-between gap-5" style="border: 1px  rgba(0, 0, 0, 0.3); border-radius: 0.5rem;">
+
+		        <div style="padding-bottom: -70px">
+		        <img class="mb-3" src="assets/img/icons/bar.svg" alt=""  style="width:90px;height:90px;" >
+		          <h6 style="font-size:150%; text-align: left">Restaurant & Bar</h6>
+		          <br>
+		          <p style="text-align: left">
+		            From brunch to cocktails, our seasonal menu and signature drinks turn every visit into a flavorful experience. One space. All your moods covered.
+		          </p>
+		        </div>
+		        <a class="special-link d-inline-flex align-items-center text-decoration-none" href="#">
+		          <span><a href="pages/restaurant.html" class="btn btn-primary">Learn More</a></span>
+		        </a>
+		      </div>
+		    </div>
+
+		    <!-- Coffee Experiences -->
+		    <div class="col-md-3 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+		      <div class="p-4 rounded-4 shadow-sm h-100 d-flex flex-column justify-content-between gap-5" style="border: 1px  rgba(0, 0, 0, 0.9); border-radius: 0.5rem;">
+
+		        <div>
+		        <img class="mb-3" src="assets/img/icons/coffee.svg" alt=""  style="width:90px;height:90px;" >
+		          <h6 style="font-size:150%; text-align: left">Coffee Experiences</h6>
+		          <br>
+		          <p style="text-align: left">
+		            Host a tasting, corporate demo, or hands-on brew session with our baristas. We bring the beans, gear, and storytelling—straight to your venue.
+		          </p>
+		        </div>
+		        <a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="#">
+		          <span><a href="pages/experience.html" class="btn btn-primary">Learn More</a></span>
+		        </a>
+		      </div>
+		    </div>
+
+		    <!-- Coffee & Merchandise -->
+		    <div class="col-md-3 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+		      <div class="p-4 rounded-4 shadow-sm h-100 d-flex flex-column justify-content-between gap-5" style="border: 1px  rgba(0, 0, 0, 0.3); border-radius: 0.5rem;">
+		        <div>
+		        <img class="mb-3" src="assets/img/icons/bag.svg" alt=""  style="width:90px;height:90px;" >
+		          <h6 style="font-size:150%; text-align: left">Coffee & Merchandise</h6>
+		          <br>
+		          <p style="text-align: left">
+		            Shop our signature roasts and branded goods—from whole beans and brew kits to mugs and gift sets. Fresh, bold, and shipped with purpose.
+		          </p>
+		        </div>
+		        <a class="special-link d-inline-flex gap-2 align-items-center text-decoration-none" href="#">
+		          <span><a href="pages/coffee.html" class="btn btn-primary">Learn More</a></span>
+		        </a>
+		      </div>
+		    </div>
+
+		  </div>
+		</section>
+		<!-- End Services -->
+
+
+         <!-- ======= Coffee Sales =======-->
+		<section>
+		  <div class="container">
+		    <div class="row align-items-center">
+
+		      <!-- Left Column: Let Image Define Height -->
+		      <div class="col-md-6 d-flex justify-content-center">
+		        <img src="assets/img/coffee-1.jpg" alt="One Cup Coffee Pack"
+		             style="max-width: 150%; height: auto;" class="img-fluid">
+		      </div>
+
+		      <!-- Right Column: Content Aligns to Image Height -->
+		      <div class="col-md-6">
+		        <div class="p-4">
+		          <h2 class="mb-3">Taste the Roast. Brew the Legacy.</h2>
+		          <p>
+		            One Cup Coffee isn’t just coffee—it’s a craft. Our 100% Arabica beans are locally roasted with precision and passion to bring you bold flavor, smooth texture, and an authentic Rwandan brew experience.
+		          </p>
+		          <p>
+		            Whether you enjoy a full-bodied espresso or a mellow morning drip, our curated blends deliver freshness in every cup. Hand-picked. Small-batch roasted. Community driven.
+		          </p>
+		          <a href="pages/coffee.html" class="btn btn-dark mt-3">Buy Now</a>
+		        </div>
+		      </div>
+
+		    </div>
+		  </div>
+		</section>
+
+		<!-- End Coffee Sales -->
+
+
+
+
+         
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-10 overflow-hidden text-center" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+        <div class="bg-holder overlay overlay-1" style="background-image:url(assets/img/banner_1.jpg);" data-parallax="data-parallax" data-rellax-percentage="0.5"></div>
+        <!--/.bg-holder-->
+        <div class="container">
+          <div class="overflow-hidden">
+            <h1 class="fs-5 fs-sm-6 text-white mb-3" data-zanim-xs='{"delay":0}'>Every Cup Creates Change</h1>
+          </div>
+          <div class="overflow-hidden">
+            <p class="ls fw-light text-300 mb-0" data-zanim-xs='{"delay":0.1}'>Every order you place empowers over 2,000 smallholder farmers across Rwanda. From ethical sourcing to youth training programs, One Cup is committed to building a coffee economy rooted in equity and opportunity.</p>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+              <h3 class="mb-4">Serve Better Coffee at Your Business</h3>
+              <p>Join Rwanda’s top hotels, offices, and distributors who trust One Cup to elevate their coffee service. From bean supply and machine leasing to full barista training — we tailor premium packages for businesses that care about quality.</p>
+               <a class="btn-outline-dark btn" href="pages/b2b.html">Partner with Us</a>
+               <a class="btn-dark btn" href="pages/contact.html">Get a Quote</a>
+            </div>
+
+          </div>
+
+          <br><br>
+
+          <div class="row mb-5">
+              <div class="mx-auto text-center">
+                <h2 class="mb-4" data-aos="fade-up" data-aos-delay="100">What Our Community Are Saying</h2>
+                <p data-aos="fade-up" data-aos-delay="200">Hear what our customers love about the One Cup experience—from coffee to community.</p>
+              </div>
+           </div>
+
+            <div class="row g-4">
+
+			  <!-- Testimonial 1 -->
+			  <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+			    <div class="testimonial rounded-4 p-4" style="border: 1px solid #e0e0e0; border-radius: 12px; text-align: left;">
+			      <blockquote class="mb-3">
+			        &ldquo;
+			        The café at One Cup has become my second home. Whether I’m working remotely or grabbing brunch with friends, the vibe, service, and coffee are always perfect.
+			        &rdquo;
+			      </blockquote>
+			      <div class="testimonial-author d-flex gap-3 align-items-center">
+			        <div class="author-img"><img class="rounded-circle img-fluid" src="assets/img/person-sq-5-min.jpg" alt="image" style="width:60px;height:60px;"></div>
+			        <div class="lh-base"><strong class="d-block">John Davis</strong><span>Creative Designer</span></div>
+			      </div>
+			    </div>
+			  </div>
+
+			  <!-- Testimonial 2 -->
+			  <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+			    <div class="testimonial rounded-4 p-4" style="border: 1px solid #e0e0e0; border-radius: 12px; text-align: left;">
+			      <blockquote class="mb-3">
+			        &ldquo;
+			        I subscribed to their Medium Roast and get it delivered monthly. It’s super convenient, always fresh, and has completely upgraded my mornings at home.
+			        &rdquo;
+			      </blockquote>
+			      <div class="testimonial-author d-flex gap-3">
+			        <div class="author-img"><img class="rounded-circle img-fluid" src="assets/img/person-sq-5-min.jpg" alt="image" style="width:60px;height:60px;"></div>
+			        <div class="lh-base"><strong class="d-block">Emily Smith</strong><span>Remote Professional</span></div>
+			      </div>
+			    </div>
+			  </div>
+
+			  <!-- Testimonial 3 -->
+			  <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+			    <div class="testimonial rounded-4 p-4" style="border: 1px solid #e0e0e0; border-radius: 12px; text-align: left;">
+			      <blockquote class="mb-3">
+			        &ldquo;
+			        The Coffee Experience Tour was incredible! I learned about roasting, grinding, and even brewed my own cup. It gave me a new appreciation for every sip.
+			        &rdquo;
+			      </blockquote>
+			      <div class="testimonial-author d-flex gap-3 align-items-center">
+			        <div class="author-img"><img class="rounded-circle img-fluid" src="assets/img/person-sq-5-min.jpg" alt="image" style="width:60px;height:60px;"></div>
+			        <div class="lh-base"><strong class="d-block">Michael Rodriguez</strong><span>Visiting Tourist</span></div>
+			      </div>
+			    </div>
+			  </div>
+
+			  <!-- Testimonial 4 -->
+			  <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+			    <div class="testimonial rounded-4 p-4" style="border: 1px solid #e0e0e0; border-radius: 12px; text-align: left;">
+			      <blockquote class="mb-3">
+			        &ldquo;
+			        I hosted a private coffee tasting event through One Cup — everyone loved it! Their team brought everything and made the evening so special and interactive.
+			        &rdquo;
+			      </blockquote>
+			      <div class="testimonial-author d-flex gap-3 align-items-center">
+			        <div class="author-img"><img class="rounded-circle img-fluid" src="assets/img/person-sq-5-min.jpg" alt="image" style="width:60px;height:60px;"></div>
+			        <div class="lh-base"><strong class="d-block">Sarah Lee</strong><span>Event Host</span></div>
+			      </div>
+			    </div>
+			  </div>
+
+			  <!-- Testimonial 5 -->
+			  <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+			    <div class="testimonial rounded-4 p-4" style="border: 1px solid #e0e0e0; border-radius: 12px; text-align: left;">
+			      <blockquote class="mb-3">
+			        &ldquo;
+			        One Cup’s beans are hands-down the best I’ve found in Kigali. You can taste the quality and care behind every roast — I even started gifting them to clients.
+			        &rdquo;
+			      </blockquote>
+			      <div class="testimonial-author d-flex gap-3 align-items-center">
+			        <div class="author-img"><img class="rounded-circle img-fluid" src="assets/img/person-sq-5-min.jpg" alt="image" style="width:60px;height:60px;"></div>
+			        <div class="lh-base"><strong class="d-block">James Kim</strong><span>Consultant & Coffee Lover</span></div>
+			      </div>
+			    </div>
+			  </div>
+
+			  <!-- Testimonial 6 -->
+			  <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+			    <div class="testimonial rounded-4 p-4" style="border: 1px solid #e0e0e0; border-radius: 12px; text-align: left;">
+			      <blockquote class="mb-3">
+			        &ldquo;
+			        I found One Cup through Instagram and decided to try it out. The café, the coffee, the people — everything felt intentional and high-quality. I'm hooked!
+			        &rdquo;
+			      </blockquote>
+			      <div class="testimonial-author d-flex gap-3 align-items-center">
+			        <div class="author-img"><img class="rounded-circle img-fluid" src="assets/img/person-sq-5-min.jpg" alt="image" style="width:60px;height:60px;"></div>
+			        <div class="lh-base"><strong class="d-block">Laura Brown</strong><span>Marketing Specialist</span></div>
+			      </div>
+			    </div>
+			  </div>
+
+			</div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+            <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+              <h2 class="mb-4">Our Partners</h2>
+              <p>Collaborating with Brands that Believe in Better Coffee. Together, we brew more than coffee—we brew community, quality, and impact.</p>
+            </div>
+
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-10">      
+              <div class="row justify-content-center mt-6">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                  <div class="client-logo"><img src="assets/img/logo/bkarena.svg" alt="brand logo" width="120" /></div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                  <div class="client-logo"><img src="assets/img/logo/tour.svg" alt="brand logo" width="180" /></div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                  <div class="client-logo"><img src="assets/img/logo/east.svg" alt="brand logo" width="160" /></div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                  <div class="client-logo"><img src="assets/img/logo/igihe.svg" alt="brand logo" width="120" /></div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                  <div class="client-logo"><img src="assets/img/logo/naeb.svg" alt="brand logo" width="150" /></div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                  <div class="client-logo"><img src="assets/img/logo/new.svg" alt="brand logo" width="150" /></div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                  <div class="client-logo"><img src="assets/img/logo/rita.svg" alt="brand logo" width="170" /></div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                  <div class="client-logo"><img src="assets/img/logo/china.svg" alt="brand logo" width="100" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+			</div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+       <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 pe-lg-6">
+              <div class="row">
+                <div class="col-md-4 col-lg-12 mb-4">
+                  <h5 class="mb-2">One Cup Coffee House & Lounge</h5>16 KG 599 Street,<br />Kigali, Rwanda<br />Cell: <a href="tel:+250 788 354 403">+250 788 354 403</a>
+                </div>
+                
+                <div class="col-md-4 col-lg-12">
+				  <h4 class="mb-2">Socials</h4>
+				  <a class="mt-2" href="https://www.instagram.com/onecuproasters/" target="_blank">
+				    <span class="fab fa-instagram fs-2 me-2 text-primary"></span>
+				  </a>
+				  <a class="mt-2" href="#" target="_blank">
+				    <span class="fab fa-twitter fs-2 mx-2 text-primary"></span>
+				  </a>
+				  <a class="mt-2" href="https://www.facebook.com/Onecuproasters" target="_blank">
+				    <span class="fab fa-facebook fs-2 mx-2 text-primary"></span>
+				  </a>
+				  <a class="mt-2" href="https://www.tiktok.com/@onecuproasters" target="_blank">
+				    <span class="fab fa-tiktok fs-2 mx-2 text-primary"></span>
+				  </a>
+				</div>
+
+              </div>
+            </div>
+            <div class="col-lg mt-4 mt-lg-0">
+              <form>
+                <div class="row">
+                  <div class="col-12"><input class="form-control" type="text" placeholder="Your Name" required="required" /></div>
+                  <div class="col-12 mt-4"><input class="form-control" type="email" placeholder="Email" required="required" /></div>
+                  <div class="col-12 mt-4"><textarea class="form-control" rows="6" placeholder="Enter your descriptions here..." required="required"></textarea></div>
+                  <div class="col-12 mt-4"><button class="btn btn-primary" type="Submit"> <span class="text-white fw-semi-bold">Send Now</span></button></div>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 mt-8">
+			  <div class="googlemap rounded-4" 
+			       data-latlng="-1.9445754,30.0782092,17" 
+			       data-scrollwheel="false" 
+			       data-icon="assets/img/map-marker.png" 
+			       data-zoom="15" 
+			       data-theme="Default" 
+			       style="min-height: 350px; overflow: hidden; border-radius: 12px;">
+			       
+			    <div class="marker-content py-3">
+			      <h5>One Cup Roasters</h5>
+			      <p>
+			        Cozy café & specialty coffee roaster<br>
+			        Located in Kigali, Rwanda
+			      </p>
+			    </div>
+			  </div>
+			</div>
+
+
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+    </main><!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+    <!--===============================================-->
+    <!--    Footer-->
+    <!--===============================================-->
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+			<section class="bg-300 py-4 fs-1 text-center">
+			  <div class="container">
+			    <a class="d-inline-block px-2 text-900 fs-1" href="https://www.facebook.com/Onecuproasters" target="_blank">
+			      <i class="fab fa-facebook"></i>
+			    </a>
+			    <a class="d-inline-block px-2 text-900 fs-1" href="#" target="_blank">
+			      <i class="fab fa-twitter"></i>
+			    </a>
+			    <a class="d-inline-block px-2 text-900 fs-1" href="https://www.instagram.com/onecuproasters/" target="_blank">
+			      <i class="fab fa-instagram"></i>
+			    </a>
+			    <a class="d-inline-block px-2 text-900 fs-1" href="https://www.tiktok.com/@onecuproasters" target="_blank">
+			      <i class="fab fa-tiktok"></i>
+			    </a>
+			  </div>
+			</section>
+	<!-- <section> close ============================-->
+
+
+
+	<!-- Search Overlay -->
+	<div id="searchOverlay" class="search-overlay">
+	  <div class="search-box">
+	    <form id="searchForm">
+	      <input type="text" id="searchInput" placeholder="Type and hit enter..." />
+	      <button type="submit"><i class="fas fa-search"></i></button>
+	    </form>
+	    <a href="#" id="closeSearch" class="close-btn"><i class="fas fa-times fa-2x"></i></a>
+	  </div>
+	</div>
+
+
+	<script>
+		const searchData = [
+		  {
+		    keywords: ["café", "coffee shop", "lounge", "relax", "hangout"],
+		    url: "pages/cafe.html"
+		  },
+		  {
+		    keywords: ["restaurant", "bar", "menu", "food", "meals", "eat", "dining"],
+		    url: "pages/restaurant.html"
+		  },
+		  {
+		    keywords: ["coffee experience", "coffee tour", "traditional", "roasting", "coffee process", "coffee making"],
+		    url: "pages/experience.html"
+		  },
+		  {
+		    keywords: ["b2b", "bulk", "wholesale", "business", "custom", "corporate", "roasted coffee"],
+		    url: "pages/b2b.html"
+		  },
+		  {
+		    keywords: ["contact", "get in touch", "message", "call", "support", "location"],
+		    url: "pages/contact.html"
+		  },
+		  {
+		    keywords: ["light roast", "medium roast", "dark roast", "beans", "ground", "arabica", "coffee types", "buy coffee", "purchase", "shop"],
+		    url: "pages/coffee.html"
+		  },
+		  {
+		    keywords: ["about", "impact", "story", "history", "farmers", "our team", "traceable"],
+		    url: "pages/about.html"
+		  }
+		];
+
+		// Open/Close Events
+		document.getElementById("openSearch").addEventListener("click", function(e) {
+		  e.preventDefault();
+		  document.getElementById("searchOverlay").style.display = "flex";
+		  document.getElementById("searchInput").focus();
+		});
+
+		document.getElementById("closeSearch").addEventListener("click", function(e) {
+		  e.preventDefault();
+		  document.getElementById("searchOverlay").style.display = "none";
+		});
+
+		// Search Redirect
+		document.getElementById("searchForm").addEventListener("submit", function(e) {
+		  e.preventDefault();
+		  const query = document.getElementById("searchInput").value.toLowerCase();
+		  const result = searchData.find(item =>
+		    item.keywords.some(keyword => query.includes(keyword))
+		  );
+		  if (result) {
+		    window.location.href = result.url;
+		  } else {
+		    alert("No results found. Try another keyword.");
+		  }
+		});
+		</script>
+
+    <!-- ============================================-->
+
+
+    <footer class="bg-primary text-center py-6">
+      <div class="container">
+        <p class="text-uppercase text-300 ls mb-3">One Cup Roasters |  Rwanda’s Premier Coffee Destination</p>
+        <a class="d-inline-block px-2 text-300 fs-1" href="pages/shop.html">
+	      <p style="font-size:15px;">Buy Coffee</p>
+	    </a>
+	    <a class="d-inline-block px-2 text-300 fs-1" href="pages/contact.html">
+	      <p style="font-size:15px;">Join Our Loyalty Program</p>
+	    </a>
+	    <a class="d-inline-block px-2 text-300 fs-1" href="pages/contact.html">
+	      <p style="font-size:15px;">Book A Coffee Experience</p>
+	    </a>
+	    <a class="d-inline-block px-2 text-300 fs-1" href="pages/contact.html">
+	      <p style="font-size:15px;">Contact Us</p>
+	    </a>
+
+      </div>
+    </footer>
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="vendors/popper/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUXLNfNHetc6JAuEyFkT87txEeRxehuv4&amp;callback=initMap" async></script>
+    <script src="vendors/bigpicture/BigPicture.js"> </script>
+    <script src="vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="vendors/rellax/rellax.min.js"></script>
+    <script src="vendors/lodash/lodash.min.js"></script>
+    <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/gsap/gsap.js"></script>
+    <script src="vendors/gsap/customEase.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/search.js"></script>
+  </body>
+
+</html>
