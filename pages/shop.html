@@ -83,10 +83,10 @@
       <!--/.bg-holder-->
       <div class="container">
         <div class="overflow-hidden">
-          <h1 class="fs-5 fs-sm-6 text-white mb-3" data-zanim-xs='{"delay":0}'>Coffee Experience</h1>
+          <h1 class="fs-5 fs-sm-6 text-white mb-3" data-zanim-xs='{"delay":0}'>Brew It. Wear It. Live It.</h1>
         </div>
         <div class="overflow-hidden">
-          <p class="fw-light ls" style="color:#ffffff;" data-zanim-xs='{"delay":0.1}'>A Journey Through the Heart of Rwandan Coffee Culture</p>
+          <p class="fw-light ls" style="color:#ffffff;" data-zanim-xs='{"delay":0.1}'>Explore our full collection of coffee, apparel, and accessories.</p>
         </div>
       </div><!-- end of .container-->
     </section><!-- <section> close ============================-->
@@ -132,67 +132,157 @@
       <!-- <section> begin ============================-->
       <section class="text-center" style="padding:-100px;">
         <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-10">
-              <h3 class="mb-4">Our Coffee Experience Tour</h3>
+
+           <div class="container">
+              <h2 class="fw-bold text-center mb-5">Shop One Cup</h2>
+
+              <!-- Categories Filter -->
+              <div class="d-flex justify-content-center flex-wrap gap-3 mb-5">
+                <button class="btn btn-outline-dark" data-filter="all">All</button>
+                <button class="btn btn-outline-dark" data-filter="coffee">Coffee</button>
+                <button class="btn btn-outline-dark" data-filter="merchandise">Merchandise</button>
+                <button class="btn btn-outline-dark" data-filter="loyalty">Loyalty</button>
+              </div>
+
+              <!-- Products Grid -->
+              <div class="row g-4" id="product-grid">
+
+                <!-- Coffee Products -->
+                <div class="col-sm-6 col-md-4 col-lg-3 product-card coffee">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <img src="../assets/img/light-roast.jpg" class="card-img-top" alt="Light Roast Coffee">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Light Roast Coffee</h5>
+                      <p class="card-text small">Floral aroma, citrus acidity, jasmine and berries.</p>
+                      <span class="fw-bold mb-2">From RWF 8,000</span>
+                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 product-card coffee">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <img src="../assets/img/medium-roast.jpg" class="card-img-top" alt="Medium Roast Coffee">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Medium Roast Coffee</h5>
+                      <p class="card-text small">Balanced acidity, honey sweetness, and dried fruits.</p>
+                      <span class="fw-bold mb-2">From RWF 8,000</span>
+                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 product-card coffee">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <img src="../assets/img/medium-dark-roast.jpg" class="card-img-top" alt="Medium Dark Roast Coffee">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Medium-Dark Roast Coffee</h5>
+                      <p class="card-text small">Chocolate, roasted almonds, and ripe plum.</p>
+                      <span class="fw-bold mb-2">From RWF 8,000</span>
+                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 product-card coffee">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <img src="../assets/img/dark-roast.jpg" class="card-img-top" alt="Dark Roast Coffee">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Dark Roast Coffee</h5>
+                      <p class="card-text small">Bold cocoa, caramel, and dark berries.</p>
+                      <span class="fw-bold mb-2">From RWF 8,000</span>
+                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Merchandise -->
+                <div class="col-sm-6 col-md-4 col-lg-3 product-card merchandise">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <img src="../assets/img/mug.jpg" class="card-img-top" alt="Branded Mug">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Branded Mug</h5>
+                      <p class="card-text small">Simple, bold, ceramic mug. Great for home or office.</p>
+                      <span class="fw-bold mb-2">RWF 5,000</span>
+                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 product-card merchandise">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <img src="../assets/img/hoodie.jpg" class="card-img-top" alt="Branded Hoodie">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Branded Hoodie</h5>
+                      <p class="card-text small">Warm, cozy, stylish with One Cup logo.</p>
+                      <span class="fw-bold mb-2">RWF 20,000</span>
+                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 product-card merchandise">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <img src="../assets/img/polo.jpg" class="card-img-top" alt="Branded Hoodie">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Branded Polo</h5>
+                      <p class="card-text small">Warm, cozy, stylish with One Cup logo.</p>
+                      <span class="fw-bold mb-2">RWF 15,000</span>
+                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 product-card merchandise">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <img src="../assets/img/cap.jpg" class="card-img-top" alt="Branded Hoodie">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Branded Cap</h5>
+                      <p class="card-text small">Warm, cozy, stylish with One Cup logo.</p>
+                      <span class="fw-bold mb-2">RWF 20,000</span>
+                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 product-card merchandise">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <img src="../assets/img/shirt.jpg" class="card-img-top" alt="Branded Hoodie">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Branded T-Shirt</h5>
+                      <p class="card-text small">Warm, cozy, stylish with One Cup logo.</p>
+                      <span class="fw-bold mb-2">RWF 20,000</span>
+                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 product-card merchandise">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <img src="../assets/img/bag.jpg" class="card-img-top" alt="Branded Hoodie">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Branded Tote Bag</h5>
+                      <p class="card-text small">Show off and carry your stuff in style</p>
+                      <span class="fw-bold mb-2">RWF 20,000</span>
+                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 product-card loyalty">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <img src="../assets/img/card.jpg" class="card-img-top" alt="Loyalty Card">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Loyalty Card</h5>
+                      <p class="card-text small">Earn points every time you shop with us.</p>
+                      <span class="fw-bold mb-2">RWF 2,000</span>
+                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
-            <div>
-              <p>Our Coffee Experience Tour invites you to step into that story, immersing yourself in the rich traditions, community values, and craftsmanship behind every cup.
-
-              Walk alongside local farmers as they take you from seed to sip — beginning with the origin of coffee in Rwanda, its historical significance, and how it’s become a symbol of pride and livelihood in our highland communities.</p>
-
-              <img src="../assets/img/process1.jpg" alt="Coffee Process" class="img-fluid w-100">
-            </div>
-          </div>
-
-          <div class="text-center mb-5">
-              <h2>Traditional Coffee Experience</h2>
-              <p class="text-muted">Follow every step from planting to tasting, the Rwandan way.</p>
-            </div>
-            
-            <div class="row g-4">
-              <!-- Step 1 -->
-              <div class="col-md-6 col-lg-4">
-                <div class="p-4 h-100 rounded-4">
-                  <h5><strong>Planting & Cultivation</strong></h5>
-                  <p class="mb-0">Learn how coffee is grown using traditional methods, with an emphasis on sustainability and natural practices.</p>
-                </div>
-              </div>
-
-              <!-- Step 2 -->
-              <div class="col-md-6 col-lg-4">
-                <div class="p-4 h-100 rounded-4">
-                  <h5><strong>Washing & Processing</strong></h5>
-                  <p class="mb-0">Get hands-on with the washing process — a key step in bringing out the unique flavors of Rwandan Bourbon Arabica.</p>
-                </div>
-              </div>
-
-              <!-- Step 3 -->
-              <div class="col-md-6 col-lg-4">
-                <div class="p-4 h-100 rounded-4m">
-                  <h5> <strong>Drying & Sorting</strong></h5>
-                  <p class="mb-0">Discover the meticulous care it takes to dry and hand-sort beans under the Rwandan sun.</p>
-                </div>
-              </div>
-
-              <!-- Step 4 -->
-              <div class="col-md-6 col-lg-6">
-                <div class="p-4 h-100 rounded-4">
-                  <h5><strong>Roasting & Grinding</strong></h5>
-                  <p class="mb-0">Join our baristas for a traditional roast over open fire, grind your beans, and experience the aroma come to life.</p>
-                </div>
-              </div>
-
-              <!-- Step 5 -->
-              <div class="col-md-6 col-lg-6">
-                <div class="p-4 h-100 rounded-4">
-                  <h5><strong>Brewing & Tasting</strong></h5>
-                  <p class="mb-0">Finish your journey by preparing your own cup of coffee the Rwandan way — shared with locals, just as it’s been done for generations.</p>
-                </div>
-              </div>
-            </div>
-
-            <a class="btn-primary btn" href="#!">Book Your Experience</a>
         </div><!-- end of .container-->
       </section><!-- <section> close ============================-->
       <!-- ============================================-->
@@ -258,7 +348,7 @@
         <div class="googlemap rounded-4" 
              data-latlng="-1.9445754,30.0782092,17" 
              data-scrollwheel="false" 
-             data-icon="assets/img/map-marker.png" 
+             data-icon="../assets/img/map-marker.png" 
              data-zoom="15" 
              data-theme="Default" 
              style="min-height: 350px; overflow: hidden; border-radius: 12px;">
@@ -356,6 +446,20 @@
     </script>
 
     <!-- ============================================-->
+
+    <script>
+      const filterButtons = document.querySelectorAll('[data-filter]');
+      const productCards = document.querySelectorAll('.product-card');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const filter = button.getAttribute('data-filter');
+          productCards.forEach(card => {
+            card.style.display = (filter === 'all' || card.classList.contains(filter)) ? 'block' : 'none';
+          });
+        });
+      });
+    </script>
 
     <!-- ============================================-->
     <!-- <section> begin ============================-->
