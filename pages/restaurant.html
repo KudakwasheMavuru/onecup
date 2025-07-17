@@ -2,8 +2,7 @@
 <html lang="en-US" dir="ltr">
 
   
-<!-- Mirrored from prium.github.io/freya/v2.1.0/projects/projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Jun 2025 21:06:26 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -68,8 +67,16 @@
             </ul>
             <ul class="navbar-nav ms-lg-auto flex-row justify-content-center py-3 py-lg-0 me-n2">
               <li><a class="nav-link px-2" href="#" id="openSearch"><span class="fas fa-search" data-fa-transform="shrink-2"></span></a></li>
-              <li><a class="nav-link px-2" href="login.html"><span class="fas fa-shopping-cart" data-fa-transform="shrink-2"></span></a></li>
-              <li><a class="nav-link px-2" href="login.html"><span class="fas fa-user" data-fa-transform="shrink-2"></span></a></li>
+              <li class="position-relative">
+                <a class="nav-link px-2" href="shop.html">
+                  <span class="fas fa-shopping-cart" data-fa-transform="shrink-2"></span>
+                  <span id="nav-cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    0
+                  </span>
+                </a>
+              </li>
+              <li>
+              <a class="nav-link px-2" href="shop.html"><span class="fas fa-user" data-fa-transform="shrink-2"></span></a></li>
             </ul>
           </div>
         </nav>
@@ -277,14 +284,27 @@
               </div>
             </div>
             <div class="col-lg mt-4 mt-lg-0">
-              <form>
-                <div class="row">
-                  <div class="col-12"><input class="form-control" type="text" placeholder="Your Name" required="required" /></div>
-                  <div class="col-12 mt-4"><input class="form-control" type="email" placeholder="Email" required="required" /></div>
-                  <div class="col-12 mt-4"><textarea class="form-control" rows="6" placeholder="Enter your descriptions here..." required="required"></textarea></div>
-                  <div class="col-12 mt-4"><button class="btn btn-primary" type="Submit"> <span class="text-white fw-semi-bold">Send Now</span></button></div>
-                </div>
-              </form>
+              <form action="https://formspree.io/f/meozoqwb" method="POST" onsubmit="return handleSubmit(event)">
+                  <div class="row">
+                    <div class="col-12">
+                      <input class="form-control" type="text" name="name" placeholder="Your Name" required />
+                    </div>
+                    <div class="col-12 mt-4">
+                      <input class="form-control" type="email" name="email" placeholder="Email" required />
+                    </div>
+                    <div class="col-12 mt-4">
+                      <textarea class="form-control" name="message" rows="6" placeholder="Enter your message here..." required></textarea>
+                    </div>
+                    <div class="col-12 mt-4">
+                      <button class="btn btn-primary" type="submit">
+                        <span class="text-white fw-semi-bold">Send Now</span>
+                      </button>
+                    </div>
+                    <div id="submissionMessage" class="col-12 mt-3 text-success fw-bold" style="display: none;">
+                      Thank you! Your message has been submitted.
+                    </div>
+                  </div>
+                </form>
             </div>
             <div class="col-12 mt-8">
         <div class="googlemap rounded-4" 
@@ -410,6 +430,31 @@
       </section>
   <!-- <section> close ============================-->
 
+<script>
+  function handleSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        form.reset();
+        document.getElementById("submissionMessage").style.display = "block";
+      } else {
+        alert("There was a problem submitting the form. Please try again.");
+      }
+    })
+    .catch(() => {
+      alert("Something went wrong. Please try again later.");
+    });
+
+    return false;
+  }
+</script>
 
     <footer class="bg-primary text-center py-6">
       <div class="container">
