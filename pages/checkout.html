@@ -210,46 +210,42 @@
 </script>
 
 <script>
-  document.getElementById('checkoutForm').addEventListener('submit', function (e) {
-    e.preventDefault();
+document.getElementById('checkoutForm').addEventListener('submit', function (e) {
+  e.preventDefault();
 
-    const name = document.getElementById('fullName').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const country = document.getElementById('country').value.trim();
-    const city = document.getElementById('city').value.trim();
-    const zip = document.getElementById('zip').value.trim();
-    const delivery = document.getElementById('deliveryOption').value;
+  const name = document.getElementById('fullName').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const delivery = document.querySelector('input[name="deliveryMethod"]:checked')?.value || 'Not selected';
+  const country = document.getElementById('country').value;
+  const city = document.getElementById('city').value;
+  const zip = document.getElementById('zip').value;
 
-    if (!name || !email || !phone || !country || !city || !delivery) {
-      alert("Please fill in all required fields.");
-      return;
-    }
+  const cart = JSON.parse(localStorage.getItem('oneCupCart')) || [];
 
-    const cart = JSON.parse(localStorage.getItem("oneCupCart")) || [];
-    if (cart.length === 0) {
-      alert("Your cart is empty.");
-      return;
-    }
+  if (cart.length === 0) {
+    alert("Your cart is empty. Please add items before submitting your order.");
+    return;
+  }
 
-    let message = `*New Order from One Cup Coffee Site*\n\n`;
-    message += `*Name:* ${name}\n*Email:* ${email}\n*Phone:* ${phone}\n*Delivery Option:* ${delivery}\n*Country:* ${country}\n*City:* ${city}\n*ZIP:* ${zip}\n\n*Order Details:*\n`;
+  let total = 0;
+  let message = `*New Order from One Cup Website*\n\n`;
+  message += `*Customer Details:*\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nDelivery: ${delivery}\nLocation: ${city}, ${country} ${zip}\n\n*Order Items:*\n`;
 
-    let total = 0;
-    cart.forEach(item => {
-      const itemTotal = item.price * item.qty;
-      total += itemTotal;
-      message += `- ${item.title} (${item.desc}) x ${item.qty} = RWF ${itemTotal}\n`;
-    });
-
-    message += `\n*Total:* RWF ${total}`;
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappURL = `https://wa.me/250788354403?text=${encodedMessage}`;
-
-    window.open(whatsappURL, '_blank');
+  cart.forEach(item => {
+    const itemTotal = item.price * item.qty;
+    total += itemTotal;
+    message += `- ${item.title} (${item.desc}) x ${item.qty} = RWF ${itemTotal}\n`;
   });
-</script>
 
+  message += `\n*Total: RWF ${total}*`;
+
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappURL = `https://wa.me/250788354403?text=${encodedMessage}`;
+
+  window.open(whatsappURL, '_blank');
+});
+</script>
 
 
     <footer class="bg-primary text-center py-6">
