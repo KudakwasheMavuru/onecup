@@ -2,8 +2,7 @@
 <html lang="en-US" dir="ltr">
 
   
-<!-- Mirrored from prium.github.io/freya/v2.1.0/pages/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Jun 2025 21:06:26 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -76,8 +75,15 @@
             </ul>
             <ul class="navbar-nav ms-lg-auto flex-row justify-content-center py-3 py-lg-0 me-n2">
               <li><a class="nav-link px-2" href="#" id="openSearch"><span class="fas fa-search" data-fa-transform="shrink-2"></span></a></li>
-              <li><a class="nav-link px-2" href="login.html"><span class="fas fa-shopping-cart" data-fa-transform="shrink-2"></span></a></li>
-              <li><a class="nav-link px-2" href="login.html"><span class="fas fa-user" data-fa-transform="shrink-2"></span></a></li>
+              <li class="position-relative">
+                <a class="nav-link px-2" href="shop.html">
+                  <span class="fas fa-shopping-cart" data-fa-transform="shrink-2"></span>
+                  <span id="nav-cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    0
+                  </span>
+                </a>
+              </li>
+              <li><a class="nav-link px-2" href="shop.html"><span class="fas fa-user" data-fa-transform="shrink-2"></span></a></li>
             </ul>
           </div>
         </nav>
