@@ -68,8 +68,15 @@
             </ul>
             <ul class="navbar-nav ms-lg-auto flex-row justify-content-center py-3 py-lg-0 me-n2">
               <li><a class="nav-link px-2" href="#" id="openSearch"><span class="fas fa-search" data-fa-transform="shrink-2"></span></a></li>
-              <li><a class="nav-link px-2" href="pages/login.html"><span class="fas fa-shopping-cart" data-fa-transform="shrink-2"></span></a></li>
-              <li><a class="nav-link px-2" href="pages/login.html"><span class="fas fa-user" data-fa-transform="shrink-2"></span></a></li>
+              <li class="position-relative">
+                <a class="nav-link px-2" href="pages/shop.html">
+                  <span class="fas fa-shopping-cart" data-fa-transform="shrink-2"></span>
+                  <span id="nav-cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    0
+                  </span>
+                </a>
+              </li>
+              <li><a class="nav-link px-2" href="pages/shop.html"><span class="fas fa-user" data-fa-transform="shrink-2"></span></a></li>
             </ul>
           </div>
         </nav>
@@ -88,7 +95,7 @@
 
       <a href="pages/shop.html" class="floating-cart" title="Go to Shop">
 		  <i class="fas fa-shopping-cart"></i>
-	  </a>
+	    </a>
 
 	  <style>.floating-cart {
 		  position: fixed;
@@ -582,6 +589,7 @@
 			  </div>
 			</div>
 
+
           </div>
         </div><!-- end of .container-->
       </section><!-- <section> close ============================-->
@@ -631,9 +639,6 @@
 	    <a href="#" id="closeSearch" class="close-btn"><i class="fas fa-times fa-2x"></i></a>
 	  </div>
 	</div>
-
-
-
 
 
 	<script>
@@ -710,10 +715,6 @@
 	    <a class="d-inline-block px-2 text-300 fs-1" href="pages/contact.html">
 	      <p style="font-size:15px;">Book A Coffee Experience</p>
 	    </a>
-	<a class="d-inline-block px-2 text-300 fs-1" href="pages/contact.html">
-	      <p style="font-size:15px;">Get Promo Updates</p>
-	    </a>
-
 	    <a class="d-inline-block px-2 text-300 fs-1" href="pages/contact.html">
 	      <p style="font-size:15px;">Contact Us</p>
 	    </a>
