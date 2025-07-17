@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 
-  
-<!-- Mirrored from prium.github.io/freya/v2.1.0/projects/projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Jun 2025 21:06:26 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -68,7 +66,14 @@
             </ul>
             <ul class="navbar-nav ms-lg-auto flex-row justify-content-center py-3 py-lg-0 me-n2">
               <li><a class="nav-link px-2" href="#" id="openSearch"><span class="fas fa-search" data-fa-transform="shrink-2"></span></a></li>
-              <li><a class="nav-link px-2" href="../pages/login.html"><span class="fas fa-shopping-cart" data-fa-transform="shrink-2"></span></a></li>
+              <li class="position-relative">
+                <a class="nav-link px-2" href="javascript:void(0);" onclick="toggleCart()">
+                  <span class="fas fa-shopping-cart" data-fa-transform="shrink-2"></span>
+                  <span id="nav-cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    0
+                  </span>
+                </a>
+              </li>              
               <li><a class="nav-link px-2" href="..pages/login.html"><span class="fas fa-user" data-fa-transform="shrink-2"></span></a></li>
             </ul>
           </div>
@@ -155,7 +160,7 @@
                       <h5 class="card-title">Light Roast Coffee</h5>
                       <p class="card-text small">Floral aroma, citrus acidity, jasmine and berries.</p>
                       <span class="fw-bold mb-2">From RWF 8,000</span>
-                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                      <button class="btn btn-dark mt-auto" onclick="openQuickView('Light Roast Coffee', '../assets/img/light-roast.jpg', 8000)">Buy Now</button>
                     </div>
                   </div>
                 </div>
@@ -167,7 +172,7 @@
                       <h5 class="card-title">Medium Roast Coffee</h5>
                       <p class="card-text small">Balanced acidity, honey sweetness, and dried fruits.</p>
                       <span class="fw-bold mb-2">From RWF 8,000</span>
-                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                      <button class="btn btn-dark mt-auto" onclick="openQuickView('Medium Roast Coffee', '../assets/img/medium-roast.jpg')">Buy Now</button>
                     </div>
                   </div>
                 </div>
@@ -179,7 +184,7 @@
                       <h5 class="card-title">Medium-Dark Roast Coffee</h5>
                       <p class="card-text small">Chocolate, roasted almonds, and ripe plum.</p>
                       <span class="fw-bold mb-2">From RWF 8,000</span>
-                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                      <button class="btn btn-dark mt-auto" onclick="openQuickView('Medium-Dark Roast Coffee', '../assets/img/medium-dark-roast.jpg')">Buy Now</button>
                     </div>
                   </div>
                 </div>
@@ -191,7 +196,7 @@
                       <h5 class="card-title">Dark Roast Coffee</h5>
                       <p class="card-text small">Bold cocoa, caramel, and dark berries.</p>
                       <span class="fw-bold mb-2">From RWF 8,000</span>
-                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                      <button class="btn btn-dark mt-auto" onclick="openQuickView('Dark Roast Coffee', '../assets/img/dark-roast.jpg')">Buy Now</button>
                     </div>
                   </div>
                 </div>
@@ -204,7 +209,7 @@
                       <h5 class="card-title">Branded Mug</h5>
                       <p class="card-text small">Simple, bold, ceramic mug. Great for home or office.</p>
                       <span class="fw-bold mb-2">RWF 5,000</span>
-                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                      <button class="btn btn-secondary mt-auto" onclick="openMerchModal('One Cup Mug', '../assets/img/mug.jpg')">View</button>
                     </div>
                   </div>
                 </div>
@@ -216,7 +221,7 @@
                       <h5 class="card-title">Branded Hoodie</h5>
                       <p class="card-text small">Warm, cozy, stylish with One Cup logo.</p>
                       <span class="fw-bold mb-2">RWF 20,000</span>
-                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                      <button class="btn btn-secondary mt-auto" onclick="openMerchModal('One Cup Mug', '../assets/img/hoodie.jpg')">View</button>
                     </div>
                   </div>
                 </div>
@@ -228,7 +233,7 @@
                       <h5 class="card-title">Branded Polo</h5>
                       <p class="card-text small">Warm, cozy, stylish with One Cup logo.</p>
                       <span class="fw-bold mb-2">RWF 15,000</span>
-                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                      <button class="btn btn-secondary mt-auto" onclick="openMerchModal('One Cup Mug', '../assets/img/polo.jpg')">View</button>
                     </div>
                   </div>
                 </div>
@@ -240,7 +245,7 @@
                       <h5 class="card-title">Branded Cap</h5>
                       <p class="card-text small">Warm, cozy, stylish with One Cup logo.</p>
                       <span class="fw-bold mb-2">RWF 20,000</span>
-                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                      <button class="btn btn-secondary mt-auto" onclick="openMerchModal('One Cup Mug', '../assets/img/cap.jpg')">View</button>
                     </div>
                   </div>
                 </div>
@@ -252,7 +257,7 @@
                       <h5 class="card-title">Branded T-Shirt</h5>
                       <p class="card-text small">Warm, cozy, stylish with One Cup logo.</p>
                       <span class="fw-bold mb-2">RWF 20,000</span>
-                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                      <button class="btn btn-secondary mt-auto" onclick="openMerchModal('One Cup Mug', '../assets/img/shirt.jpg')">View</button>
                     </div>
                   </div>
                 </div>
@@ -264,7 +269,7 @@
                       <h5 class="card-title">Branded Tote Bag</h5>
                       <p class="card-text small">Show off and carry your stuff in style</p>
                       <span class="fw-bold mb-2">RWF 20,000</span>
-                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                      <button class="btn btn-secondary mt-auto" onclick="openMerchModal('One Cup Mug', '../assets/img/bag.jpg')">View</button>
                     </div>
                   </div>
                 </div>
@@ -276,7 +281,7 @@
                       <h5 class="card-title">Loyalty Card</h5>
                       <p class="card-text small">Earn points every time you shop with us.</p>
                       <span class="fw-bold mb-2">RWF 2,000</span>
-                      <a href="#" class="btn btn-dark mt-auto">Buy Now</a>
+                      <button class="btn btn-secondary mt-auto" onclick="openMerchModal('One Cup Mug', '../assets/img/card.jpg')">View</button>
                     </div>
                   </div>
                 </div>
@@ -286,6 +291,296 @@
         </div><!-- end of .container-->
       </section><!-- <section> close ============================-->
       <!-- ============================================-->
+
+<!-- Out-of-Stock Modal for Merchandise -->
+<div class="modal fade" id="merchModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+      <img id="merchImage" class="img-fluid mb-3" src="" alt="Merch">
+      <h5 id="merchTitle" class="mb-3"></h5>
+      <p class="text-danger fw-bold">Currently Out of Stock</p>
+      <p class="text-muted">Coming soon! Stay tuned for our exclusive merchandise launch.</p>
+      <button class="btn btn-dark mt-2" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openMerchModal(title, image) {
+    document.getElementById("merchTitle").innerText = title;
+    document.getElementById("merchImage").src = image;
+    const merchModal = new bootstrap.Modal(document.getElementById('merchModal'));
+    merchModal.show();
+  }
+</script>
+
+<!-- Modal -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img id="modalImage" class="img-fluid rounded" src="" alt="Product Image">
+        </div>
+        <div class="col-md-6">
+          <p class="fw-bold">RWF <span id="modalPrice">4000</span></p>
+          <div class="mb-3">
+            <label class="form-label">Choose Size:</label>
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-outline-secondary btn-sm size-btn" data-size="250g">250g</button>
+              <button class="btn btn-outline-secondary btn-sm size-btn" data-size="500g">500g</button>
+              <button class="btn btn-outline-secondary btn-sm size-btn" data-size="1kg">1kg</button>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Bean Type:</label>
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-outline-secondary btn-sm bean-btn" data-bean="Beans">Beans</button>
+              <button class="btn btn-outline-secondary btn-sm bean-btn" data-bean="Espresso">Espresso</button>
+              <button class="btn btn-outline-secondary btn-sm bean-btn" data-bean="Filter">Filter</button>
+              <button class="btn btn-outline-secondary btn-sm bean-btn" data-bean="Plunge">Plunge</button>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Quantity:</label>
+            <div class="input-group" style="max-width: 140px;">
+              <button class="btn btn-outline-dark btn-sm" type="button" onclick="changeQuantity(-1)">-</button>
+              <input type="text" class="form-control text-center" id="productQuantity" value="1">
+              <button class="btn btn-outline-dark btn-sm" type="button" onclick="changeQuantity(1)">+</button>
+            </div>
+          </div>
+          <button class="btn btn-dark" onclick="addToCart()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Side Cart -->
+<div id="sideCart" class="position-fixed end-0 top-0 bg-white shadow p-4" style="width: 320px; height: 100vh; z-index: 1050; overflow-y: auto; display: none;">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h5 class="mb-0">Your Cart</h5>
+    <button class="btn-close" onclick="toggleCart()"></button>
+  </div>
+  <ul id="cartItems" class="list-unstyled"></ul>
+  <hr>
+  <p><strong>Total: </strong>RWF <span id="cartTotal">0</span></p>
+  <a href="checkout.html" class="btn btn-dark w-100">Checkout</a>
+</div>
+
+<script>
+let selectedSize = null;
+let selectedBean = null;
+
+function openQuickView(title, imageUrl) {
+  document.getElementById("modalTitle").innerText = title;
+  document.getElementById("modalImage").src = imageUrl;
+  document.getElementById("modalPrice").innerText = 4000;
+  document.getElementById("productQuantity").value = 1;
+  selectedSize = null;
+  selectedBean = null;
+  document.querySelectorAll(".size-btn").forEach(btn => btn.classList.remove("active"));
+  document.querySelectorAll(".bean-btn").forEach(btn => btn.classList.remove("active"));
+  const productModal = new bootstrap.Modal(document.getElementById("productModal"));
+  productModal.show();
+}
+
+function changeQuantity(change) {
+  const quantityInput = document.getElementById("productQuantity");
+  let current = parseInt(quantityInput.value);
+  if (!isNaN(current)) {
+    current += change;
+    if (current < 1) current = 1;
+    quantityInput.value = current;
+  }
+}
+
+document.querySelectorAll(".size-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    selectedSize = btn.dataset.size;
+    document.querySelectorAll(".size-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    const prices = { "250g": 4000, "500g": 8000, "1kg": 16000 };
+    document.getElementById("modalPrice").innerText = prices[selectedSize];
+  });
+});
+
+document.querySelectorAll(".bean-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    selectedBean = btn.dataset.bean;
+    document.querySelectorAll(".bean-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+  });
+});
+
+function addToCart() {
+  const title = document.getElementById("modalTitle").innerText;
+  const image = document.getElementById("modalImage").src;
+  const quantity = parseInt(document.getElementById("productQuantity").value);
+  const price = parseInt(document.getElementById("modalPrice").innerText);
+
+  if (!selectedSize || !selectedBean) {
+    alert("Please select size and bean type");
+    return;
+  }
+
+  const item = document.createElement("li");
+  item.classList.add("mb-3", "d-flex", "justify-content-between", "align-items-start");
+  item.innerHTML = `
+    <img src="${image}" alt="${title}" style="width: 50px; height: 50px; object-fit: cover;" class="me-2">
+    <div class="flex-grow-1">
+      <div><strong>${title}</strong></div>
+      <div>${selectedSize} - ${selectedBean}</div>
+      <div>Qty: ${quantity}</div>
+    </div>
+    <div>
+      <div>RWF ${price * quantity}</div>
+      <button class="btn btn-sm btn-outline-danger mt-1" onclick="this.closest('li').remove(); updateCartTotal();">Remove</button>
+    </div>
+  `;
+  document.getElementById("cartItems").appendChild(item);
+  updateCartTotal();
+  saveCartToLocalStorage();
+  document.getElementById("sideCart").style.display = "block";
+}
+
+function updateCartTotal() {
+  let total = 0;
+  document.querySelectorAll("#cartItems li").forEach(li => {
+    const priceDiv = li.querySelector("div:last-child > div:first-child");
+    if (priceDiv) {
+      const priceText = priceDiv.textContent.replace(/[^\d]/g, '');
+      const price = parseInt(priceText);
+      if (!isNaN(price)) {
+        total += price;
+      }
+    }
+  });
+  document.getElementById("cartTotal").innerText = total || 0;
+}
+
+function toggleCart() {
+  const cart = document.getElementById("sideCart");
+  cart.style.display = cart.style.display === "none" ? "block" : "none";
+}
+
+window.addEventListener("load", loadCartFromLocalStorage);
+
+// Save current cart to local storage
+function saveCartToLocalStorage() {
+  const items = [];
+  document.querySelectorAll("#cartItems li").forEach(li => {
+    const img = li.querySelector("img")?.src || "";
+    const title = li.querySelector("strong")?.innerText || "";
+    const desc = li.querySelector(".flex-grow-1 > div:nth-child(2)")?.innerText || ""; // e.g. 250g - Beans
+    const qtyText = li.querySelector(".flex-grow-1 > div:nth-child(3)")?.innerText || "Qty: 1";
+    const qty = parseInt(qtyText.replace("Qty: ", ""));
+    const priceText = li.querySelector("div:last-child > div:first-child")?.innerText || "0";
+    const price = parseInt(priceText.replace(/[^\d]/g, ''));
+
+    items.push({ title, img, desc, qty, price });
+  });
+  localStorage.setItem("oneCupCart", JSON.stringify(items));
+}
+
+// Load cart items from local storage
+function loadCartFromLocalStorage() {
+  const saved = localStorage.getItem("oneCupCart");
+  if (!saved) return;
+  const items = JSON.parse(saved);
+  let total = 0; // Reset total on every load
+
+  items.forEach(item => {
+    const li = document.createElement("li");
+    li.classList.add("mb-3", "d-flex", "justify-content-between", "align-items-start");
+    li.innerHTML = `
+      <img src="${item.img}" alt="${item.title}" style="width: 50px; height: 50px; object-fit: cover;" class="me-2">
+      <div class="flex-grow-1">
+        <div><strong>${item.title}</strong></div>
+        <div>${item.desc}</div>
+        <div>Qty: ${item.qty}</div>
+      </div>
+      <div>
+        <div>RWF ${item.price}</div>
+        <button class="btn btn-sm btn-outline-danger mt-1" onclick="this.closest('li').remove(); updateCartTotal(); saveCartToLocalStorage();">Remove</button>
+      </div>
+    `;
+    document.getElementById("cartItems").appendChild(li);
+    total += item.price; // Add this item's price to the total
+  });
+
+  document.getElementById("cartTotal").innerText = isNaN(total) ? 0 : total;
+  updateCartTotal();
+  document.getElementById("sideCart").style.display = items.length ? "block" : "none";
+}
+</script>
+
+<script>
+  // Re-render saved cart items on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedCart = JSON.parse(localStorage.getItem('cartItems')) || [];
+    const cartItemsList = document.getElementById('cartItems');
+
+    if (savedCart.length > 0) {
+      document.getElementById("sideCart").style.display = "block";
+    }
+
+    savedCart.forEach(item => {
+      const li = document.createElement('li');
+      li.classList.add("mb-3", "d-flex", "justify-content-between", "align-items-start");
+      li.innerHTML = `
+        <img src="${item.image}" alt="${item.title}" style="width: 50px; height: 50px; object-fit: cover;" class="me-2">
+        <div class="flex-grow-1">
+          <div><strong>${item.title}</strong></div>
+          <div>${item.size} - ${item.bean}</div>
+          <div>Qty: ${item.quantity}</div>
+        </div>
+        <div>
+          <div>RWF ${item.price * item.quantity}</div>
+          <button class="btn btn-sm btn-outline-danger mt-1" onclick="removeCartItem(this, '${item.title}', '${item.size}', '${item.bean}')">Remove</button>
+        </div>
+      `;
+      cartItemsList.appendChild(li);
+    });
+
+    updateCartTotal();
+    updateCartCount();
+  });
+
+  function removeCartItem(button, title, size, bean) {
+    const li = button.closest("li");
+    li.remove();
+
+    const existingCart = JSON.parse(localStorage.getItem('cartItems')) || [];
+    const updatedCart = existingCart.filter(item => !(item.title === title && item.size === size && item.bean === bean));
+    localStorage.setItem('cartItems', JSON.stringify(updatedCart));
+
+    updateCartTotal();
+    updateCartCount();
+  }
+
+  // Ensure sideCart opens when cart icon is clicked
+  document.querySelectorAll('.floating-cart, .nav-link[href$="login.html"]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.href = "shop.html#cart";
+    });
+  });
+
+  // If URL has #cart, show the cart after redirect
+  window.addEventListener('load', () => {
+    if (window.location.hash === "#cart") {
+      document.getElementById("sideCart").style.display = "block";
+    }
+  });
+</script>
+
+
+
 
       <!-- <section> begin ============================-->
       <section class="py-5 overflow-hidden text-center" data-zanim-timeline="{}" data-zanim-trigger="scroll">
@@ -299,7 +594,7 @@
               When you drink our coffee, you’re not just tasting beans — you’re tasting the land, the people, and the passion behind it all.
             </p>
             <h5 class="text-white">— From our Farmers</h5> <br><br>
-            <a class="btn-outline-light btn" href="#!">Book Your Experience</a>
+            <a class="btn-outline-light btn" href="contact.html">Book Your Experience</a>
           </div>
         </div>
       </section>
